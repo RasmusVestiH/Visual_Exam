@@ -1,0 +1,7 @@
+# Visual Analytics - Assignment 5: CNN-Artist
+
+## Description
+For this assignment we have had to work with a huge dataset (> 2gb) meaning I have just created some random samples making it easier for you to test the script. The size of this also means that I have not been able to upload the entire dataset on github, but it is possible to upload it on your own on the jupyter notebook and change the paths in the script incase you want to run it on all the data. This will of course give a more accurate process than what is achieved in this smaller random sampled dataset, where I got 0.26 in accuracy. This smaller dataset consists of 40 paintings from each of the 10 painters resulting in a total of 400 in the training dataset and for the validation it consists of 10 painting from each resulting in 100 in total for the validation. 
+
+## Running it
+First you need to create the environment this can be done by bash create_vision_venv.sh afterwards I have created a bash script called run_script.sh which should automate the process of creating an environment and running the script. So all you need to do is to navigate to the folder "assignment_5" in the terminal and the "bash run_script.sh" should do the trick. Otherwise the sources are in /src and output files are in /output where you can find the results.  

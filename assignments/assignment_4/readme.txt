@@ -1,0 +1,2 @@
+For this assignment it should be possible to bash the run_scripth.sh and it would automatically run both models in the terminal. 
+The default train size is 0.8 (80%) and the test size is 0.2 (20%) the argparse can be found in the scripts. 
