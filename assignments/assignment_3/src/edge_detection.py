@@ -34,6 +34,10 @@ def main():
     right = (widthX//4)*3
     bottom = (heightY//8)*7
   
+    #!!! 
+    #Make the ROI with the dimensions above (basically draw a line where the image is cropped) 
+    #!!!
+    
     # Cropped image of above dimension 
     # It will not change orginal image as we save it as im1
     im1 = im.crop((left, top, right, bottom)) 
