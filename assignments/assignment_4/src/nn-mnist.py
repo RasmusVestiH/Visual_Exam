@@ -9,6 +9,7 @@ sys.path.append(os.path.join(".."))
 
 import argparse
 import numpy as np
+import pandas as pd
 import utils.classifier_utils as clf_util
 #neural networks with numpy
 from utils.neuralnetwork import NeuralNetwork
@@ -112,7 +113,9 @@ def main():
     print(["[INFO] evaluating network..."])
     predictions = nn.predict(X_test)
     predictions = predictions.argmax(axis=1)
+
     print(classification_report(y_test.argmax(axis=1), predictions))
-    
+
+              
 if __name__ == "__main__":
     main()
