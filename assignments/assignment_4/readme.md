@@ -1,7 +1,8 @@
-# Visual Analytics - Assignment 4: Classification benchmarks
+# Visual Analytics - Assignment 4: Classification Benchmarks
 
 ## Description
 **Disclaimer: This assignment has been worked out in the group consisting of Emil Buus Thomsen, Johanne Brandhøj Würtz, Christoffer Kramer and Rasmus Vesti Hansen**
+
 In this assignment we were working with neural networks and logistic regression as classification models. For this we worked with mnist dataset which contains of large amount pictures of handdrawn numbers. 
 
 

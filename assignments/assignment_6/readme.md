@@ -1,6 +1,7 @@
 # Assignment 6 - CNNs on Movie Posters (Self assigned project) 
 ## Description
 **Disclaimer: This assignment has been worked out in the group consisting of Emil Buus Thomsen, Johanne Brandhøj Würtz, Christoffer Kramer and Rasmus Vesti Hansen** 
+
 For this assignment we tried to make a LeNet Model classify movie genres by images of move posters.
 
 ## Running it

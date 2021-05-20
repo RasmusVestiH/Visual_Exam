@@ -2,6 +2,7 @@
 
 ## Description
 **Disclaimer: This assignment has been worked out in the group consisting of Emil Buus Thomsen, Johanne Brandhøj Würtz, Christoffer Kramer and Rasmus Vesti Hansen** 
+
 For this assignment we have had to work with a huge dataset (> 2gb) meaning I have just created some random samples making it easier for you to test the script. We created smaller samples based on the original dataset to make it easier to upload and faster to run the tests on. The code used to create these datasets are commented out in the assignment 5 notebook script in the /src folder. The size of this also means that I have not been able to upload the entire dataset on github, but it is possible to upload it on your own on the jupyter notebook and change the paths in the script incase you want to run it on all the data via this link (https://www.kaggle.com/delayedkarma/impressionist-classifier-data). 
 
 This will of course give a more accurate process than what is achieved in this smaller random sampled dataset, where I got 0.26 in accuracy. This smaller dataset consists of 40 paintings from each of the 10 painters resulting in a total of 400 in the training dataset and for the validation it consists of 10 painting from each resulting in 100 in total for the validation. 
