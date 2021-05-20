@@ -81,6 +81,9 @@ def main():
 
     cm = metrics.classification_report(y_test, y_pred)
     print(cm)
+    txt_file = open("../output/lr_mnist.txt", "a")
+    txt_file.write(cm)
+    txt_file.close()
     
 if __name__ == "__main__":
     main()

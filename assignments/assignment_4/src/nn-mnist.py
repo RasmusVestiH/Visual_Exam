@@ -115,7 +115,9 @@ def main():
     predictions = predictions.argmax(axis=1)
 
     print(classification_report(y_test.argmax(axis=1), predictions))
-
+    txt_file = open("../output/nn_mnist.txt", "a")
+    txt_file.write(classification_report(y_test.argmax(axis=1), predictions))
+    txt_file.close()
               
 if __name__ == "__main__":
     main()

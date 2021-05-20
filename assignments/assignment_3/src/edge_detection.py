@@ -26,7 +26,7 @@ def main():
     '''
     Cropping the image
     '''
-    im = Image.open(r"../data/jefferson_img.jpg") #defining the im witho our image
+    im = Image.open(r"../data/jefferson_img.jpg") #defining the im with our image
   
     # Setting the points for cropped image which we calculated above
     left = widthX//4
@@ -34,9 +34,10 @@ def main():
     right = (widthX//4)*3
     bottom = (heightY//8)*7
   
-    #!!! 
-    #Make the ROI with the dimensions above (basically draw a line where the image is cropped) 
-    #!!!
+    
+    #Making the ROI with the dimensions above (basically draw a line where the image is getting cropped below) 
+    im0 = cv2.rectangle(image, (left,top), (right,bottom), (255,0,0), 3)
+    cv2.imwrite("../output/image_with_ROI.jpg", im0)
     
     # Cropped image of above dimension 
     # It will not change orginal image as we save it as im1
@@ -59,8 +60,6 @@ def main():
     blurred = cv2.GaussianBlur(cropped_image, (5,5), 0) #we set the kernel of 5,5
 
     canny = cv2.Canny(blurred, 100, 150) #I tried messing around with the setting of the blur but figured this was the best
-
-    # jimshow_channel(canny) #once again just a test in the original script which won't be needed now. 
 
     (contours, _) = cv2.findContours(canny.copy(), #using a copy of the canny image to find the countours
                     cv2.RETR_EXTERNAL, #filtering internal structures hieararchially
